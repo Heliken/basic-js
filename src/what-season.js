@@ -5,7 +5,6 @@ module.exports = function getSeason(date) {
     return 'Unable to determine the time of year!'
   if(Object.prototype.toString.call(date) === '[object Date]'){
     let month = date.getMonth();
-    console.log(date,month);
     let season;
     switch(true){
       case month < 2 || month === 11:
